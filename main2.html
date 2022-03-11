@@ -1,0 +1,126 @@
+
+<!--html/bootstrap script for page-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    rel="stylesheet" href="style.css">  
+  
+    <!--Metatags-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Where Is Bigfoot?</title>
+  </head>
+  <!--Start of NavBar script-->
+  <body style="background-image: url('cutebigfoot.png');">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark p-10 ">
+    </nav>
+    <!--End of NavBar script-->
+   
+    <div class="jumbotron text-center">
+      <a class="btn btn-primary" href="index.html" role="button">Map</a>
+      <!-- <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand bg-info p-100 rounded text-white fw-bold" href="index.html">Map</a>
+      </button> -->
+      </div>
+      
+    <!--Start of Image container-->
+    <div class="container" style="background-color: white;">
+      <div class="row justify-content-md-center">
+        <div class="col" style="text-align: center;">
+          <h1 class="text-info pt-1 ">Where is Bigfoot Most Likley to Appear?</h1>
+          <hr />
+          <img src="bigfoot-forest.jpg" alt="" width="1200" height="1000">
+          <p style="line-height:2;font-size:125%; opacity: 0.5;">
+            <span style= >Bigfoot image licensed under Creative Commons
+            </span><br/>
+          </p>
+        </div>
+      </div>
+    <!--End of Image container-->
+
+
+    <!--Start of Introduction container-->
+    <!--<div class="container" style="background-color: white;">-->
+     <div class="row justify-content-md-center">
+      <!-- <div class="col" style="text-align: center;"> -->
+        <div><div class='tableauPlaceholder' id='viz1647038639084' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='bigfoot_over_the_years&#47;Sheet2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1647038639084');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> </div>
+
+        <h2 class="text-info pt-6 ">Introduction:</h2>
+        <p style="line-height:2;font-size:125%;">
+          Bigfoot is an elusive creature native to North America. Bigfoots range in size from 6 to 15’ feet tall and are covered in hair. They are said to have a foul smell and sounds associated with them include shrieks, growls, and screams. The first published sighting of a Bigfoot was written up in the British Colonist newspaper of British Columbia. Here is one of the more recent sightings, by the Washington State Department of Transportation. 
+          Our team decided to investigate the places that Bigfoots are often sighted to see if we could determine what factors contribute to a sighting and if we could use that information to predict where future sightings were likely to occur. 
+          
+        </p>
+
+    <!--End of Introduction container-->
+      <div><div class='tableauPlaceholder' id='viz1647037007365' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BigfootSightings_16463404441720&#47;Bigfootvs_Campgrounds' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1647037007365');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> </div>
+   <!--Start of Analysis container-->
+     <div class="row justify-content-md-center">
+      <!-- <div class="col" style="text-align: center;"> -->
+        <h2 class="text-info pt-6 ">Our Factors:</h2>
+        <p style ="line-height:2; font-size:125%;" >
+          Next, given that the majority of Bigfoot sightings occur in the wilderness, we decided to consider why those who encountered him were out in the woods. Our intuition lead us to three things- population growth, camping and murder. We further wondered, those bigfoot sighters, are they high? 
+          To answer those questions, we pulled dataset csvs  from the US Census Bureau, US Campgrounds.info, The National Study on Drug Use and Health and the Bigfoot Researchers Organization , loaded them into juypter notebooks and standardized them to group by state and by the years from 2001-2020, with a focus on the 2020 data.  
+          
+        </p>
+       </div>
+            <!--End of Analysis container-->
+            <div><div class='tableauPlaceholder' id='viz1647037195277' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BigFootSightings-HBFSStates&#47;B' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1647037195277');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> </div>
+      <!--Start of Analysis container-->
+     <div class="row justify-content-md-center">
+        <h2 class="text-info pt-6 ">Machine Learning:</h2>
+        <p style ="line-height:2; font-size:125%;" >
+          The goal of our machine learning model was to see if we could create a model that would be able to predict the number of sightings per state dependent on some key information on each of the states. We looked at 9 different factors. These factors were illicit drug use, alcohol use, substance use disorder, missing people per 100,000 residents, homicide rate, number of campgrounds, and state.  We used a supervised machine learning multiple regression model. For our dependent variable we did number of sightings per state and our independent variables were our 8 different factors. We split our data into test and train data then ran our though our model. We received an r-square score of 0.085.  This indicates to us that there are far more factors that contribute to the sightings than just the factors that have been added to our machine learning. Other factors that in the future we could take into consideration such as terrain, income, and other wildlife sightings.  
+        </p>
+       </div>
+            <!--End of Analysis container-->
+          <!--Start of Analysis container-->
+     <div class="row justify-content-md-center">
+      <h2 class="text-info pt-6 ">Conclusion: Washington!</h2>
+      <p style ="line-height:2; font-size:125%;" >
+        Looking through all of our Analysis we believe that the best place to see bigfoot is in Washington state.Washington has the highest number of sightings over time.The number of sightings also has a high correlation with our other factors seeming to indicate that they have some bearing as to why there are so many sightings.
+        
+      </p>
+      
+     </div>
+     <div class="row justify-content-md-center">
+      <img src="washington.png" alt="washington"></a>
+      <div>
+          <!--End of Analysis container-->
+          </div>
+        </div>
+      </div>
+     </div> 
+          <!-- Start of footer -->
+    <footer class="footer navbar-fixed-bottom">
+      <p class="text-muted text-center">
+        Using Machine Learning to Predict the Next Bigfoot Sighting: Elena Church, Jenny Shea, Nicole Van Driss, Hana Zubovic
+      </p>
+    </footer>
+    <!-- End of footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- <script src="????"></script> -->
+  </body>
+</html>
