@@ -20,7 +20,8 @@
   <!--Start of NavBar script-->
   <body style="background-color: white glasses">
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark  ">
-      <a class="navbar-brand  navbar-nav ms-md-auto navbar-right col-lg-2 col-md-3 " href="#"><span class="navbar-brand  h1 fs-2  ">Directory</span></a>
+      <a class="navbar-brand  navbar-nav ms-md-auto navbar-right col-lg-2 col-md-3"
+      <img src="github-icon.png"><href="https://github.com/JennyShea/Where-Will-Big-Foot-Appear-Next"><span></span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -42,12 +43,15 @@
     <!--End of NavBar script-->
   
     <!--Start of Image container-->
+    
     <div class="container" style="background-color: white;">
       <div class="row justify-content-md-center">
         <div class="col" style="text-align: center;">
+          <br/><br/>
           <h1 class="text-info pt-1" >Where is Bigfoot Most Likely to Appear?</h1>
-          <hr />
-          <img src="sassy_header.jpg" alt="" width="1300" height="1000">
+          <hr/>
+          <br/>
+          <img src="sassy_header.jpg" alt="" width="1280" height="720">
           <p style="line-height:2;font-size:125%; opacity: 0.5;">
             <span style= >
             </span><br/>
@@ -58,22 +62,24 @@
 
 
     <!--Start of Introduction container-->
-    <!--<div class="container" style="background-color: white;">-->
-     <div class="row justify-content-md-center">
+    <div class="row justify-content-md-center">
       <!-- <div class="col" style="text-align: center;"> -->
         <h2 class="text-info pt-6" id="Introduction">Introduction:</h2>
+        <br/>
         <p style="line-height:2;font-size:125%;">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Etiam at imperdiet magna. Nulla mollis est nec sapien sollicitudin, 
-          id porta mi porttitor. Aenean placerat in dolor sit amet efficitur. 
-          In malesuada tincidunt consectetur. Nullam iaculis in mauris in hendrerit. 
-          Mauris eget quam consectetur, laoreet massa sed, placerat elit. Maecenas placerat 
-          lacus eget augue pharetra, id tincidunt purus efficitur. Aliquam posuere, orci vel 
-          consequat ultricies, risus ex hendrerit ipsum, ut pharetra nunc massa et augue. 
-          In erat nunc, dignissim in urna at, dapibus sodales erat. Donec eu congue arcu, eu semper augue. 
-          Quisque sollicitudin, quam et sagittis mattis, arcu tortor commodo tellus, sit amet tristique est 
-          metus in massa. Aliquam gravida a tellus non mattis. Duis porttitor, dolor non maximus mollis, 
-          ipsum elit placerat urna, ut consectetur justo dolor vel ipsum.
+          <br/>
+          One of the great North American mysteries that still capture the hearts and minds of tourists and 
+          enthusiasts alike is the tale of the illusive bigfoot. With a description height ranging from 6 to 
+          15 feet tall covered head to toe with fur, Sasquatch can’t be that hard to miss. Given a plethora 
+          of data to work with, we set out to investigate what factors contributed most to Bigfoot sightings
+          and see if we could build a model that can predict where it will appear next.
+          <br/><br/>
+          We considered factors like location, whether there were many cases of missing or unidentified persons,
+          drug and alcohol use, proximity to campgrounds, and general population growth in the state. 
+          We gathered data from the US census Bureau, National Missing and Unidentified Persons System, 
+          the National Survey on Drugs Use and Health, and USA Campgrounds Info to bring into our analysis. 
+          <br/>
+          <br/>
         </p>
 
     <!--End of Introduction container-->
@@ -83,35 +89,92 @@
       <!-- <div class="col" style="text-align: center;"> -->
         <h2 class="text-info pt-6" id="Analysis">Analysis:</h2>
         <p style ="line-height:2; font-size:125%;" >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Etiam at imperdiet magna. Nulla mollis est nec sapien sollicitudin, 
-          id porta mi porttitor. Aenean placerat in dolor sit amet efficitur. 
-          In malesuada tincidunt consectetur. Nullam iaculis in mauris in hendrerit. 
-          Mauris eget quam consectetur, laoreet massa sed, placerat elit. Maecenas placerat 
-          lacus eget augue pharetra, id tincidunt purus efficitur. Aliquam posuere, orci vel 
-          consequat ultricies, risus ex hendrerit ipsum, ut pharetra nunc massa et augue. 
-          In erat nunc, dignissim in urna at, dapibus sodales erat. Donec eu congue arcu, eu semper augue. 
-          Quisque sollicitudin, quam et sagittis mattis, arcu tortor commodo tellus, sit amet tristique est 
-          metus in massa. Aliquam gravida a tellus non mattis. Duis porttitor, dolor non maximus mollis, 
-          ipsum elit placerat urna, ut consectetur justo dolor vel ipsum.
+          <br/>
+          Data Pre-Processing:
+          <li>Importing .csv files into Jupyter Notebook</li>
+          <li>Getting rid of duplicates</li>
+          <li>Filtered for cases of illicit drug use and alcohol among the 18+ age group as seemingly the overwhelming majority of reported sightings.</li> 
+          <li>Filtered census data on a state by state basis</li>
+          <li>Converting NA values to 0</li>
+          <li>Grouped by State </li>
+          <li>Sorted Sightings by Year</li>
+          <li>Our main focus centered on sightings in the year 2020</li>
+          <br/><br/><br/>
+          <p style ="line-height:2; font-size:125%;" >
+          Our target is most often seen in wilderness where people can gather for a number of different reasons. Given the nature of the description and somewhat fantastical nature of the claims made by reported sightings, our team focused on human factors that may explain these sightings. Perhaps cases of missing persons misidentified, or perhaps paranoia and bad trips from drug use could explain the phenomenon. 
+          To answer those questions, we pulled dataset csvs  from the US Census Bureau, US Campgrounds.info, The National Study on Drug Use and Health and the Bigfoot Researchers Organization , loaded them into Juypter notebooks and standardized them to group by state and by the years from 2001-2020, with a focus on the 2020 data.  
+          We visualized the different sets of data against BigFoot sightings to see if there were any patterns that emerged. 
+          <br/><br/>
+          The states with the highest numbers of bigfoot sightings over the 20-year period are Florida, Illinois, Michigan, Missouri, Ohio, Texas, and Washington.  There appears to be a high number of sightings in Washington, a state with 576 campgrounds. The map also shows that Bigfoot sightings tend to appear near coasts and rivers. A majority of bigfoot sightings are in states with higher population density.
+
         </p>
+          
+        </p>
+        <div class="row justify-content-md-center">
+          <!-- <div class="col" style="text-align: center;"> -->
+            <div>
+              <div class='tableauPlaceholder' id='viz1647038639084' style='position: relative'><object class='tableauViz'  style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='bigfoot_over_the_years&#47;Sheet2' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+                <param name='filter' value='publish=yes' />
+              </object>
+            </div>                
+            <script type='text/javascript'>                    
+              var divElement = document.getElementById('viz1647038639084');                    
+              var vizElement = divElement.getElementsByTagName('object')[0];                    
+              vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+              var scriptElement = document.createElement('script');                    
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
+             
+            </div>
+            <div><div class='tableauPlaceholder' id='viz1647037007365' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BigfootSightings_16463404441720&#47;Bigfootvs_Campgrounds' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1647037007365');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> </div>
+            <!--Start of Analysis container-->
+              <div class="row justify-content-md-center">
+               <!-- <div class="col" style="text-align: center;"> -->
+                 <h2 class="text-info pt-6 ">Our Factors:</h2>            <br/>
+                 <br/>           
+                 <br/>
+                 <p style ="line-height:2; font-size:125%;" >
+                  Given our mapping of different possible factors against Bigfoot sightings,
+                  we wanted to know if we could input these features and generate a prediction
+                   within a high degree of probability (mid to high .70’s)
+                   <br/>
+                  </br/>
+                   <img src="bfmodel.png" alt="" width="1280" height="720">
+                   <br/>
+                   <br/>
        </div>
             <!--End of Analysis container-->
       <!--Start of Analysis container-->
      <div class="row justify-content-md-center">
         <h2 class="text-info pt-6"id="Conclusion">Conclusion:</h2>
         <p style ="line-height:2; font-size:125%;" >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Etiam at imperdiet magna. Nulla mollis est nec sapien sollicitudin, 
-          id porta mi porttitor. Aenean placerat in dolor sit amet efficitur. 
-          In malesuada tincidunt consectetur. Nullam iaculis in mauris in hendrerit. 
-          Mauris eget quam consectetur, laoreet massa sed, placerat elit. Maecenas placerat 
-          lacus eget augue pharetra, id tincidunt purus efficitur. Aliquam posuere, orci vel 
-          consequat ultricies, risus ex hendrerit ipsum, ut pharetra nunc massa et augue. 
-          In erat nunc, dignissim in urna at, dapibus sodales erat. Donec eu congue arcu, eu semper augue. 
-          Quisque sollicitudin, quam et sagittis mattis, arcu tortor commodo tellus, sit amet tristique est 
-          metus in massa. Aliquam gravida a tellus non mattis. Duis porttitor, dolor non maximus mollis, 
-          ipsum elit placerat urna, ut consectetur justo dolor vel ipsum.
+          <br/>
+          Using sklearn, we initiated a multiple regression model.  Our model was 
+          sharply below our standards of accuracy. Even with minor adjustments to 
+          our data, the testing score did not rise above 0.085. Making it less of 1% accurate. 
+          <br/><br/>
+          With this failure in mind, we turn our attention on possible developments for future
+          iterations. Given that the features we tested made many assumptions such as humans 
+          being the center cause of sightings, our approach could change to environmental factors. 
+          By implementing weather, seasons, even the time of day, we can examine whether there are 
+          more explanations for our fuzzy friend than we initially realized. 
+          <br/><br/>
+          Though we could calculate the average weather, temperature conditions and aggregate locations
+           of sightings, it is clear that there are far more factors than we realized when it comes to 
+           finally solving the mystery of the most difficult game of hide and seek in North America. 
         </p>
         <!--Sas image overlaying to footer-->
         <div class="container">
