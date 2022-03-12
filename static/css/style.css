@@ -20,11 +20,25 @@ body {
   background-color: #fff;
   border-radius: 5px;
 }
-
-.btn {
-  padding: top px;
-  padding-bottom: px;
-  padding-right:40px;
-  background-color: #51afa0 !important;
-  color: #FFFFFF !important;
+ .footer
+{
+    background-color: #2D3339;
+    color: white;
 }
+.footer a
+{
+    line-height: 2.8em;
+}
+.footer-links a,.footer-links p
+{
+    color: #aaa;
+    text-align: center;
+} 
+
+/* .overlay {
+  position: bottom;
+  width: 600px;
+  margin-left: 100px;
+  margin-top: -0px;
+  height: 200px;
+} */

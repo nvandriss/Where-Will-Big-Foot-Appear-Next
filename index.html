@@ -1,53 +1,157 @@
+
+<!--html/bootstrap script for page-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Where Is Bigfoot?</title>
-
-    <!-- Leaflet CSS -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-      crossorigin=""
-    />
-
-    <!-- Load jQuery and PapaParse to read data from a CSV file -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
-
-    <!--Our CSS -->
-    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
-
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      #map {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-      }
-    </style>
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    rel="stylesheet" href="style.css">  
+  
+    <!--Metatags-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Where Is Bigfoot?</title>
   </head>
+  <!--Start of NavBar script-->
+  <body style="background-color: white glasses">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark  ">
+      <a class="navbar-brand  navbar-nav ms-md-auto navbar-right col-lg-2 col-md-3 " href="#"><span class="navbar-brand  h1 fs-2  ">Directory</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active fs-4" href="#Introduction">Introduction</a>
+          <a class="nav-item nav-link active fs-4" href="#Analysis">Analysis</a>
+          <a class="nav-item nav-link active fs-4" href="#Conclusion">Conclusion</a>
+          <a class="nav-item nav-link active fs-4" href="https://github.com/JennyShea/Where-Will-Big-Foot-Appear-Next">Project Repo</a>
+        </div>
+      </div>
+       <!-- Button script -->
+    <div class="jumbotron text-center">
+      <a class="btn btn-primary me-5 btn-lg btn-lg-active " href="map.html" role="button">Mapped Sightings</a>
+    </div>
+    <!-- End of Button Script -->  
+    </nav>
+    </nav>
+    <!--End of NavBar script-->
+  
+    <!--Start of Image container-->
+    <div class="container" style="background-color: white;">
+      <div class="row justify-content-md-center">
+        <div class="col" style="text-align: center;">
+          <h1 class="text-info pt-1" >Where is Bigfoot Most Likely to Appear?</h1>
+          <hr />
+          <img src="sassy_header.jpg" alt="" width="1300" height="1000">
+          <p style="line-height:2;font-size:125%; opacity: 0.5;">
+            <span style= >
+            </span><br/>
+          </p>
+        </div>
+      </div>
+    <!--End of Image container-->
 
-  <body>
-    <!-- The div that holds our map -->
-    <div id="map"></div>
 
-    <!-- Leaflet JS -->
+    <!--Start of Introduction container-->
+    <!--<div class="container" style="background-color: white;">-->
+     <div class="row justify-content-md-center">
+      <!-- <div class="col" style="text-align: center;"> -->
+        <h2 class="text-info pt-6" id="Introduction">Introduction:</h2>
+        <p style="line-height:2;font-size:125%;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Etiam at imperdiet magna. Nulla mollis est nec sapien sollicitudin, 
+          id porta mi porttitor. Aenean placerat in dolor sit amet efficitur. 
+          In malesuada tincidunt consectetur. Nullam iaculis in mauris in hendrerit. 
+          Mauris eget quam consectetur, laoreet massa sed, placerat elit. Maecenas placerat 
+          lacus eget augue pharetra, id tincidunt purus efficitur. Aliquam posuere, orci vel 
+          consequat ultricies, risus ex hendrerit ipsum, ut pharetra nunc massa et augue. 
+          In erat nunc, dignissim in urna at, dapibus sodales erat. Donec eu congue arcu, eu semper augue. 
+          Quisque sollicitudin, quam et sagittis mattis, arcu tortor commodo tellus, sit amet tristique est 
+          metus in massa. Aliquam gravida a tellus non mattis. Duis porttitor, dolor non maximus mollis, 
+          ipsum elit placerat urna, ut consectetur justo dolor vel ipsum.
+        </p>
+
+    <!--End of Introduction container-->
+
+   <!--Start of Analysis container-->
+     <div class="row justify-content-md-center">
+      <!-- <div class="col" style="text-align: center;"> -->
+        <h2 class="text-info pt-6" id="Analysis">Analysis:</h2>
+        <p style ="line-height:2; font-size:125%;" >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Etiam at imperdiet magna. Nulla mollis est nec sapien sollicitudin, 
+          id porta mi porttitor. Aenean placerat in dolor sit amet efficitur. 
+          In malesuada tincidunt consectetur. Nullam iaculis in mauris in hendrerit. 
+          Mauris eget quam consectetur, laoreet massa sed, placerat elit. Maecenas placerat 
+          lacus eget augue pharetra, id tincidunt purus efficitur. Aliquam posuere, orci vel 
+          consequat ultricies, risus ex hendrerit ipsum, ut pharetra nunc massa et augue. 
+          In erat nunc, dignissim in urna at, dapibus sodales erat. Donec eu congue arcu, eu semper augue. 
+          Quisque sollicitudin, quam et sagittis mattis, arcu tortor commodo tellus, sit amet tristique est 
+          metus in massa. Aliquam gravida a tellus non mattis. Duis porttitor, dolor non maximus mollis, 
+          ipsum elit placerat urna, ut consectetur justo dolor vel ipsum.
+        </p>
+       </div>
+            <!--End of Analysis container-->
+      <!--Start of Analysis container-->
+     <div class="row justify-content-md-center">
+        <h2 class="text-info pt-6"id="Conclusion">Conclusion:</h2>
+        <p style ="line-height:2; font-size:125%;" >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Etiam at imperdiet magna. Nulla mollis est nec sapien sollicitudin, 
+          id porta mi porttitor. Aenean placerat in dolor sit amet efficitur. 
+          In malesuada tincidunt consectetur. Nullam iaculis in mauris in hendrerit. 
+          Mauris eget quam consectetur, laoreet massa sed, placerat elit. Maecenas placerat 
+          lacus eget augue pharetra, id tincidunt purus efficitur. Aliquam posuere, orci vel 
+          consequat ultricies, risus ex hendrerit ipsum, ut pharetra nunc massa et augue. 
+          In erat nunc, dignissim in urna at, dapibus sodales erat. Donec eu congue arcu, eu semper augue. 
+          Quisque sollicitudin, quam et sagittis mattis, arcu tortor commodo tellus, sit amet tristique est 
+          metus in massa. Aliquam gravida a tellus non mattis. Duis porttitor, dolor non maximus mollis, 
+          ipsum elit placerat urna, ut consectetur justo dolor vel ipsum.
+        </p>
+        <!--Sas image overlaying to footer-->
+        <div class="container">
+          <div class="col-md-4" style="position: relative; top:65px; padding-left: 300px;  padding-right: 0px; ">
+              <img src="sassy_footer.png" class="img-responsive">
+          </div>
+      </div>
+      <!--End of Sas image-->
+     </div>
+       </div>
+            <!--End of Analysis container-->
+          </div>
+        </div>
+      </div>
+     </div> 
+          <!-- Start of footer -->
+    <footer class="footer navbar-fixed-bottom bg-dark text-center text-white">
+      <p class="text-white text-center mb-4">
+        <br><br>
+        Using Machine Learning to Predict the Next Bigfoot Sighting
+      </p>
+      
+     <div class="text-center"
+      <div class= "footer-links-repo ">  <h5 class="text-uppercase">Links To Contributors</h5>
+        <a class="text-white" href="https://github.com/ElenaChurch">Elena Church</a>
+        <a class="text-white" href="https://github.com/nvandriss">Nicole Van Driss</a>
+        <a class="text-white" href="https://github.com/JennyShea">Jenny Shea</a>
+        <a class="text-white" href="https://github.com/HanaZubovic">Hana Zubovic</a>
+      </div>
+      <br>
+    </footer>
+    <!-- End of footer -->
+
     <script
-      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-      crossorigin=""
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
     ></script>
 
-    <!-- Our JavaScript -->
-    <script type="text/javascript" src="static/js/logic.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- <script src="????"></script> -->
   </body>
 </html>

@@ -44,7 +44,9 @@ async function main()
          // Customize your icon
         icon: L.icon({
           iconUrl: 'bigfoot.png',
-          iconSize: [40, 60]
+          iconSize: [40, 60],
+          color: 'white',
+          fillOpacity: 0.7 
         })
       }).bindPopup(row.title);
       
