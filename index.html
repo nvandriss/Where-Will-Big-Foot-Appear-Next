@@ -91,21 +91,20 @@
         <p style ="line-height:2; font-size:125%;" >
           <br/>
           Data Pre-Processing:
-          <li>Importing .csv files into Jupyter Notebook</li>
-          <li>Getting rid of duplicates</li>
-          <li>Filtered for cases of illicit drug use and alcohol among the 18+ age group as seemingly the overwhelming majority of reported sightings.</li> 
-          <li>Filtered census data on a state by state basis</li>
+          <li>Imported .csv files into Jupyter Notebooks</li>
+          <li>Got rid of duplicates</li>
+          <li>Filtered for cases of illicit drug use and alcohol among the 18+ age group by state</li> 
+          <li>Filtered census data by total & percentage change from previous census by state</li>
           <li>Converting NA values to 0</li>
-          <li>Grouped by State </li>
           <li>Sorted Sightings by Year</li>
           <li>Our main focus centered on sightings in the year 2020</li>
           <br/><br/><br/>
           <p style ="line-height:2; font-size:125%;" >
-          Our target is most often seen in wilderness where people can gather for a number of different reasons. Given the nature of the description and somewhat fantastical nature of the claims made by reported sightings, our team focused on human factors that may explain these sightings. Perhaps cases of missing persons misidentified, or perhaps paranoia and bad trips from drug use could explain the phenomenon. 
-          To answer those questions, we pulled dataset csvs  from the US Census Bureau, US Campgrounds.info, The National Study on Drug Use and Health and the Bigfoot Researchers Organization , loaded them into Juypter notebooks and standardized them to group by state and by the years from 2001-2020, with a focus on the 2020 data.  
-          We visualized the different sets of data against BigFoot sightings to see if there were any patterns that emerged. 
+          Our target is most often seen in wilderness where people can gather for a number of different reasons. The two that we focused on were camping and perhaps being up to no good. Or perhaps paranoia and bad trips from drug use could explain the phenomenon. 
+          To answer those questions, we pulled dataset csvs  from the US Census Bureau, US Campgrounds.info, The National Survey on Drug Use and Health and the Bigfoot Researchers Organization , loaded them into Juypter notebooks and standardized them to group by state and by the years from 2001-2020, with a focus on the 2020 data.  
+          We visualized the different sets of data against BigFoot sightings to see if any patterns emerged. 
           <br/><br/>
-          The states with the highest numbers of bigfoot sightings over the 20-year period are Florida, Illinois, Michigan, Missouri, Ohio, Texas, and Washington.  There appears to be a high number of sightings in Washington, a state with 576 campgrounds. The map also shows that Bigfoot sightings tend to appear near coasts and rivers. A majority of bigfoot sightings are in states with higher population density.
+          The states with the highest numbers of bigfoot sightings over the 20-year period from 2001 to 2020 are Florida, Illinois, Michigan, Missouri, Ohio, Texas, and Washington.  The highest number of sightings is in Washington, a state with 576 campgrounds. The map also shows that Bigfoot sightings tend to appear near coasts and rivers. A majority of bigfoot sightings are in states with higher population density.
 
         </p>
           
@@ -150,7 +149,7 @@
                  <br/>           
                  <br/>
                  <p style ="line-height:2; font-size:125%;" >
-                  Given our mapping of different possible factors against Bigfoot sightings,
+                  After analyzing different possible factors against Bigfoot sightings,
                   we wanted to know if we could input these features and generate a prediction
                    within a high degree of probability (mid to high .70’s)
                    <br/>
@@ -167,16 +166,16 @@
           <br/>
           Using sklearn, we initiated a multiple regression model.  Our model was 
           sharply below our standards of accuracy. Even with minor adjustments to 
-          our data, the testing score did not rise above 0.085. Making it less of 1% accurate. 
+          our data, the testing score did not rise above 0.085. Making it less than 1% accurate. 
           <br/><br/>
           With this failure in mind, we turn our attention on possible developments for future
           iterations. Given that the features we tested made many assumptions such as humans 
           being the center cause of sightings, our approach could change to environmental factors. 
-          By implementing weather, seasons, even the time of day, we can examine whether there are 
+          By implementing weather, seasons, even the time of day, we could examine whether there are 
           more explanations for our fuzzy friend than we initially realized. 
           <br/><br/>
-          Though we could calculate the average weather, temperature conditions and aggregate locations
-           of sightings, it is clear that there are far more factors than we realized when it comes to 
+          Though we could calculate the average weather, temperature conditions, and aggregate locations
+           of sightings, it is clear that there are far more factors than we intially chose when it comes to 
            finally solving the mystery of the most difficult game of hide and seek in North America. 
         </p>
         <!--Sas image overlaying to footer-->
