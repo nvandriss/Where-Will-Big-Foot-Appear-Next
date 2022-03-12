@@ -46,4 +46,4 @@ With this failure in mind, we turn our attention on possible developments for fu
 Though we could calculate the average weather, temperature conditions and aggregate locations of sightings, it is clear that there are far more factors than we realized when it comes to finally solving the mystery of the most difficult game of hide and seek in North America.
 
 ## GitHub Webpage
-https://nvandriss.github.io/Where-Will-Big-Foot-Appear-Next/
+https://jennyshea.github.io/Where-Will-Big-Foot-Appear-Next/
