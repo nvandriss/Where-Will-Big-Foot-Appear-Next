@@ -8,7 +8,7 @@ One of the great North American mysteries that still capture the hearts and mind
 We considered factors like location, whether there were many cases of missing or unidentified persons, drug and alcohol use, proximity to campgrounds, and general population growth in the state. We gathered data from the US census Bureau, National Missing and Unidentified Persons System, the National Survey on Drugs Use and Health, and USA Campgrounds Info to bring into our analysis.
 
 
-##Analysis:
+## Analysis:
 
 Data Pre-Processing:
 
@@ -30,13 +30,13 @@ The states with the highest numbers of bigfoot sightings over the 20-year period
 https://public.tableau.com/javascripts/api/viz_v1.js';               
 
 
-##Our Factors:
+## Our Factors:
 
 
 Given our mapping of different possible factors against Bigfoot sightings, we wanted to know if we could input these features and generate a prediction within a high degree of probability (mid to high .70’s)
 
 
-Conclusion:
+## Conclusion:
 
 
 Using sklearn, we initiated a multiple regression model. Our model was sharply below our standards of accuracy. Even with minor adjustments to our data, the testing score did not rise above 0.085. Making it less of 1% accurate.
