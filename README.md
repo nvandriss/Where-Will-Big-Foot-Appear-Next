@@ -28,7 +28,7 @@ The states with the highest numbers of bigfoot sightings over the 20-year period
                 
 ## Tableau Dashboard                
 https://public.tableau.com/javascripts/api/viz_v1.js';               
-
+https://public.tableau.com/app/profile/jenny.shea/viz/BigFootSightings-HBFSStates/B
 
 ## Our Factors:
 
