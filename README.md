@@ -3,7 +3,7 @@
 ## Introduction:
 
 
-One of the great North American mysteries that still capture the hearts and minds of tourists and enthusiasts alike is the tale of the illusive bigfoot. With a description height ranging from 6 to 15 feet tall covered head to toe with fur, Sasquatch can’t be that hard to miss. Given a plethora of data to work with, we set out to investigate what factors contributed most to Bigfoot sightings and see if we could build a model that can predict where it will appear next.
+One of the great North American mysteries that still capture the hearts and minds of tourists and enthusiasts alike is the tale of the elusive bigfoot. With a description height ranging from 6 to 15 feet tall covered head to toe with fur, Sasquatch can’t be that hard to miss. Given a plethora of data to work with, we set out to investigate what factors contributed most to Bigfoot sightings and see if we could build a model that can predict where it will appear next.
 
 We considered factors like location, whether there were many cases of missing or unidentified persons, drug and alcohol use, proximity to campgrounds, and general population growth in the state. We gathered data from the US census Bureau, National Missing and Unidentified Persons System, the National Survey on Drugs Use and Health, and USA Campgrounds Info to bring into our analysis.
 
