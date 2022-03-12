@@ -44,3 +44,6 @@ Using sklearn, we initiated a multiple regression model. Our model was sharply b
 With this failure in mind, we turn our attention on possible developments for future iterations. Given that the features we tested made many assumptions such as humans being the center cause of sightings, our approach could change to environmental factors. By implementing weather, seasons, even the time of day, we can examine whether there are more explanations for our fuzzy friend than we initially realized.
 
 Though we could calculate the average weather, temperature conditions and aggregate locations of sightings, it is clear that there are far more factors than we realized when it comes to finally solving the mystery of the most difficult game of hide and seek in North America.
+
+## GitHub Webpage
+https://nvandriss.github.io/Where-Will-Big-Foot-Appear-Next/
